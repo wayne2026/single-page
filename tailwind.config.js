@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        monaco:['monaco'],
+        outfit:['outfit'],
+        montserrat:['montseraat'],
+        oxygen:['oxygen']
+      }
+    },
   },
   plugins: [],
 }

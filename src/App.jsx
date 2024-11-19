@@ -9,21 +9,26 @@ import GetInvolved from './section/GetInvolved'
 import NeedSupport from './section/NeedSupport'
 import Hero from './section/Hero'
 import Footer from './components/Footer'
+import SideBar from './components/SideBar'
+
 function App() {
   return (
-  <div className='mx-auto bg-[#def8f9] overflow-hidden'>
+    <div className='mx-auto overflow-hidden'>
+      <SideBar />
       <Navbar />
-      <div className='w-[90%] flex flex-col gap-y-12 mx-auto  pt-20'>
-        <Hero/>
+      <div className=' relative flex flex-col mx-auto mt-24'>
+        <div className='bg-[#9790e4]'>
+        <Hero />
         <AboutUs />
-        <WhatWeDo/>
-        <OurMission/>
-        <OurVision/>
-        <OurProjects/>
-        <GetInvolved/>
-        <NeedSupport/>
+        </div>
+        <WhatWeDo />
+        <OurMission />
+        <OurVision />
+        <OurProjects />
+        <GetInvolved />
+        <NeedSupport />
       </div>
-        <Footer/>   
+      <Footer />
     </div>
   )
 }

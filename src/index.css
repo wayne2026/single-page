@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .tilted-top {
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+.tilted-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+}
+.tilted-bottom-part {
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+.tilted-top-part {
+    clip-path: polygon(0 75%, 100% 0, 100% 100%, 0% 100%);
+}
+@font-face {
+    font-family: 'monaco';
+    src: url('/monaco.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    font-family:'montserrat'
 }

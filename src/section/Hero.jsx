@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div>
+    <div className='xl:pb-24 xl:pt-10 w-[95%] mx-auto'>
       <section className="relative h-auto w-full bg-[#222831] min-h-[400px] overflow-hidden px-5 mt-10 lg:px-20">
         
         <div className="absolute top-0 right-0 h-[30%] w-[30%] bg-gradient-to-tr from-emerald-200 to-emerald-500 blur-[130px]">

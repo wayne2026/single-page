@@ -16,7 +16,7 @@ export default function Navbar() {
   }, []);
 //border-b-[2px] border-red-500 
   return (
-    <div className={` w-full   h-24 fixed ${bgColor} text-xl z-50 font-medium hover:bg-[#F8F4EE]  flex justify-evenly items-center`}>
+    <div className={` w-full font-outfit  h-24 fixed ${bgColor} text-xl z-[100] font-medium hover:bg-[#F8F4EE]  flex justify-evenly items-center`}>
       <div className=''>
         <a href="/">
           <h1 className='text-center'>Evool </h1>
