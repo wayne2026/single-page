@@ -10,7 +10,11 @@ export default {
         monaco:['monaco'],
         outfit:['outfit'],
         montserrat:['montseraat'],
-        oxygen:['oxygen']
+        oxygen:['oxygen'],
+        lato:['lato'],
+        myriad:['myriad'],
+        
+
       }
     },
   },

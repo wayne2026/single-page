@@ -4,7 +4,7 @@ export default function SideBar() {
   const [side, setSide] = useState(false)
   return (
     <div className=' z-50 w-14 h-full fixed right-0 mx-auto flex flex-col items-center justify-center '>
-      <div className='max-sm:hidden'>
+      <div className=''>
         {side ? (
           <div
             className="-rotate-90 w-64 h-[500px] transition-all duration-700 ease-in-out transform flex flex-col justify-center items-center bg-teal-300 opacity-90"
@@ -17,7 +17,7 @@ export default function SideBar() {
               <div
                 className="w-48 h-[440px] overflow-hidden opacity-100 transition-opacity duration-1000 ease-in-out"
               >
-                <p className="rotate-90 mt-10 -ml-3 w-52">
+                <p className="rotate-90 mt-14 -ml-3 w-52">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Accusamus, perspiciatis.
                   <a href="https://voolata.com" target="_blank" rel="noopener noreferrer">

@@ -16,8 +16,8 @@ function App() {
     <div className='mx-auto overflow-hidden'>
       <SideBar />
       <Navbar />
-      <div className=' relative flex flex-col mx-auto mt-24'>
-        <div className='bg-[#9790e4]'>
+      <div className=' relative flex flex-col mx-auto mt-20 sm:mt-24'>
+        <div className='bg-gradient-to-b from-[#787cfe] to-[#48bed9]'>
         <Hero />
         <AboutUs />
         </div>
