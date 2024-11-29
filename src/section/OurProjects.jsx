@@ -12,7 +12,7 @@ export default function OurProjects() {
     //     <img src="qrcode.jpg" alt="" className='w-[500px]'/>
     //   </div>
     // </div>
-    <div className='pb-36 w-[85%] mx-auto sm:pt-20' id='project'>
+    <div className='pb-36 w-[85%] mx-auto sm:pt-20' id='our-project'>
       <h1 className='text-5xl text-nowrap max-lg:text-center font-semibold  md:text-6xl pb-10'>OUR PROJECTS</h1>
       <div className='flex flex-col lg:flex-row gap-10 md:gap-20 items-center'>
         <img src="qrcode.jpg" alt="" className='w-full sm:hidden md:w-[500px] rounded-lg pt-10' />
