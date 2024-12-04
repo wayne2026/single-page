@@ -1,49 +1,15 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
+export const menuItems = [
+  { label: "Our Mission", path: "/our-mission" },
+  { label: "Our Vision", path: "/our-vision" },
+  { label: "Our Project", path: "/our-project" },
+  { label: "About Us", path: "/about-us" },
+  { label: "Get Involved", path: "/get-involved" }
+];
 export default function Footer() {
   return (
-    // <div className='relative flex justify-center items-center mt-96'>
-    //   <img src="arrow12.svg" alt="" width={200} className='absolute -top-56 z-10' />
-    //   <div className='w-full flex justify-center  gap-5 p-24 mx-auto h-[700px] bg-[#5f5fc2] tilted-top'>
-    //     <div className='flex mr-16 gap-6 flex-col w-1/4  mt-56'>
-    //       <h2 className='text-black md:text-2xl font-medium'><span className='text-blue-300'>Evool</span> Foundation  </h2>
-    //       <p className='md:text-normal pr-8 text-black'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis officiis illo optio excepturi doloremque eaque. Adipisci vitae tempora consequuntur praesentium.</p>
-    //       <div className='flex  justif-start  gap-10'>
-    //         <img src="twitter.png" alt="" width={30} />
-    //         <img src="meta.png" alt="" width={30} />
-    //         <img src="ig.png" alt="" width={30} />
-    //       </div>
-    //     </div>
-    //     <div className='flex gap-6 flex-col w-1/4 mt-56'>
-    //       <h2 className='md:text-2xl font-medium text-black'>Company</h2>
-    //       <ul className='outline-none text-black '>
-    //         <li >About Us</li>
-    //         <li>Our Services</li>
-    //         <li>Our Projects</li>
-    //         <li>Blog & Updates</li>
-    //       </ul>
-    //     </div>
-    //     <div className='flex gap-6 flex-col w-1/4 mt-56'>
-    //       <h2 className='md:text-2xl font-medium text-black'>Links</h2>
-    //       <ul className='text-black'>
-    //         <li>F.A.Q</li>
-    //         <li>Testimonials</li>
-    //         <li>Recent Work</li>
-    //         <li>Features</li>
-    //       </ul>
-    //     </div>
-    //     <div className='flex gap-6 flex-col w-1/4 mt-56'>
-    //       <h2 className='md:text-2xl font-medium text-black'>Contact</h2>
-    //       <ul className='text-black'>
-    //         <li>+123 456 7890</li>
-    //         <li>info@marketing.com</li>
-    //         <li>123 Main St. Suite 100, Anytown,<br />Any State USA 456789
-    //         </li>
-    //       </ul>
-    //     </div>
 
-    //   </div>
-    // </div>
     <div className="relative mt-56 bg-blue-300 ">
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-blue-300"
@@ -74,18 +40,17 @@ export default function Footer() {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam.
               </p>
-              
+
             </div>
           </div>
           <div className='flex md:flex-row flex-col sm:items-center sm:gap-24 sm:ml-20 sm:pt-10'>
             <div className="flex flex-col text-center md:text-left items-center md:mt-0 ">
               <h2 className="text-black text-xl font-medium lg:pr-14">Company</h2>
-              <ul className="text-black mt-4 space-y-2 w-36">
-                <li>About Us</li>
-                <li>Our Services</li>
-                <li>Our Projects</li>
-                <li>Blog & Updates</li>
-              </ul>
+              <div className="text-black mt-4 flex flex-col gap-2 w-36">
+                {menuItems.map((me, index) => (
+                  <Link to={me.path}><h1>{me.label}</h1></Link>
+                ))}
+              </div>
             </div>
 
             <div className="flex flex-col text-center md:text-left mt-10 md:mt-0">
@@ -109,12 +74,10 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          
+
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t-[3px] border-deep-purple-accent-200 sm:flex-row">
-          <p className="text-sm text-black">
-            © Copyright 2020 Lorem Inc. All rights reserved.
-          </p>
+
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a
               href="/"

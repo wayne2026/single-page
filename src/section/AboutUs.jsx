@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function AboutUs() {
     return (
-        <div className='flex  flex-col justify-between w-[85%] mx-auto pb-10' id='about-us'>
-            <h1 className='text-5xl sm:text-6xl max-sm:text-center font-semibold'>
+        <div className='flex flex-col justify-between w-[85%] mx-auto' id='about-us'>
+            <h1 className='text-4xl sm:text-6xl max-sm:text-center font-semibold'>
                 ABOUT US
             </h1>
             <div className='flex flex-col lg:flex-row items-center gap-10 md:gap-20'>

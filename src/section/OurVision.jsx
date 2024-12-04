@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function OurVision() {
   return (
-    <div className='bg-gray-100 mb-36' id='our-vision'>
-      <div className='pb-36 w-[85%] mx-auto pt-20' id='vision'>
-        <h1 className='text-5xl sm:text-6xl pb-10 max-sm:text-center font-semibold'>OUR VISION</h1>
+    <div className='bg-gray-100 mb-20' id='our-vision'>
+      <div className='sm:pb-36 pb-10 w-[85%] mx-auto pt-20' id='vision'>
+        <h1 className='text-4xl sm:text-6xl pb-10 max-sm:text-center font-semibold'>OUR VISION</h1>
         <div className='flex flex-col lg:flex-row items-center gap-14'>
           <img src="vision_bg.png" alt="" className='w-full md:w-[500px] rounded-lg' />
           <p className='text-lg md:text-2xl lg:w-[60%] text-justify mt-8 md:mt-0'>

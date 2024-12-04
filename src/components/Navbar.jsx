@@ -67,9 +67,8 @@ export default function Navbar() {
       </div>
 
       <button className={`hidden md:flex items-center justify-center border-[3px] border-black lg:p-2 p-1 lg:w-32  transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}>
-
         <Link to="https://voolata.com/donation">
-          <h1 className="text-center max-lg:text-lg">Donate</h1>
+          <h1 className="text-center max-lg:text-lg">Contact Us</h1>
         </Link>
       </button>
 
