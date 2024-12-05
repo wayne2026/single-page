@@ -94,11 +94,11 @@ export default function NeedSupport() {
       <p className='md:text-2xl pt-20 pb-16'>
         Together, we can create a future where technology drives sustainable development and enhances the quality of life for all. Join us in our mission to make a positive impact on the world.
       </p>
-      <button class="px-6 py-3 font-bold sm:h-28 h-24 mt-10 rounded-3xl flex flex-col shadow-[-7px_2px_15px_0px_rgba(0,_0,_0,_0.1)] items-center justify-center sm:w-[70%] mx-auto active:shadow-none hover:translate-y-1 active:translate-y-2 transition-all duration-150">
-        <a href="https://voolata.com/donation" target='blank'>
+      <a href="https://voolata.com/donation" target='blank'>
+        <button class="px-6 py-3 font-bold sm:h-28 h-24 mt-10 rounded-3xl flex flex-col shadow-[-7px_2px_15px_0px_rgba(0,_0,_0,_0.1)] items-center justify-center sm:w-[70%] mx-auto active:shadow-none hover:translate-y-1 active:translate-y-2 transition-all duration-150">
           <h2 className='md:text-4xl text-center font-semibold'>Donate Now and be a part of the <span className='text-purple-500 '>CHANGE!</span></h2>
-        </a>
-      </button>
+        </button>
+      </a>
     </div>
   )
 }
